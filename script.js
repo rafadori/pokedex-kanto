@@ -11,6 +11,12 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=151") // endpoint que irá nos re
       // inserindo os nomes dos pokemons
       box.querySelector("#pokemon-name").innerHTML = data.results[i].name
       box.querySelector("#pokemon-name").style.textTransform = "capitalize"
+      // inserindo imagem dos pokemons
+      const pokemonImage = await fetch(
+        "https://pokeapi.co/api/v2/pokemon-form/" + data.results[i].name
+      )
+      const image = await pokemonImage.json()
+      box.querySelector("#pokemon-img").src = image.sprites.front_default
       page.innerHTML += box.outerHTML
     }
   })
