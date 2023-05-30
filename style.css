@@ -12,6 +12,12 @@ html {
   font-family: "Fira Sans", Ubuntu, Helvetica, Arial, sans-serif;
 }
 
+header {
+  text-align: center;
+  position: relative;
+  top: 1.5rem;
+}
+
 #pokedex-page {
   display: flex;
   flex-direction: row;
@@ -21,7 +27,7 @@ html {
   align-items: center;
   text-align: center;
   gap: 3.9rem;
-  margin: 5%;
+  margin: 3% 5% 5% 5%;
 }
 
 a {
