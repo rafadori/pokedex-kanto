@@ -1,6 +1,6 @@
 # Pokedex
 
-![preview](images/preview.png)
+![preview](images/preview-readme.png)
 
 > Projeto pessoal
 
